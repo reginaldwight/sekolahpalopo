@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | SI Sekolah Palopo</title>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <div class="logo">📍 SI Sekolah Palopo</div>
+        <span class="breadcrumb">Dashboard › SMA</span>
+    </div>
+
+    <div class="nav-center">
+        <input type="text" placeholder="Cari SMA..." class="nav-search">
+    </div>
+
+    <div class="nav-right">
+       <button class="logout-btn" onclick="showLogoutModal()">Logout</button>
+    </div>
+</nav>
+
+
+<section class="map-section">
+  <div class="sidebar">
+    <h3>Daftar SMA di Kota Palopo</h3>
+
+    <ul class="school-list">
+        <!-- Diisi otomatis oleh JS -->
+    </ul>
+
+    <div class="info-box">
+        <p><b>Petunjuk:</b></p>
+        <p>Klik nama sekolah untuk melihat lokasi di peta.</p>
+    </div>
+</div>
+
+</div>
+
+
+    <div id="map"></div>
+</section>
+<!-- LOGOUT MODAL -->
+<div id="logoutModal" class="modal-overlay">
+    <div class="modal-box">
+        <h3>Yakin mau logout?</h3>
+        <p>Kamu akan keluar dari sistem.</p>
+
+        <div class="modal-actions">
+            <button class="btn-cancel" onclick="hideLogoutModal()">Batal</button>
+            <button class="btn-logout" onclick="confirmLogout()">Logout</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/map.js"></script>
+
+</body>
+</html>

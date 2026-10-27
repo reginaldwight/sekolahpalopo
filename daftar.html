@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Akun | SI Sekolah Palopo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+
+<div class="register-box">
+    <h2>Daftar Akun</h2>
+
+    <input type="text" placeholder="Nama Lengkap">
+    <input type="email" placeholder="Email">
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <input type="password" placeholder="Konfirmasi Password">
+
+    <button onclick="authProcess()">Daftar</button>
+
+    <p class="hint">
+        Sudah punya akun?
+        <a href="login.html">Masuk</a>
+    </p>
+</div>
+<div id="loadingScreen" class="loading-screen">
+    <div class="loading-box">
+        <div class="spinner"></div>
+        <h3>Mulai mencari sekolah...</h3>
+        <p>Mohon tunggu sebentar</p>
+    </div>
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>

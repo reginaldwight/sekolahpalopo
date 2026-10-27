@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | SI Sekolah Palopo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+
+<div class="login-box">
+    <h2>Login User</h2>
+
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+
+   <button onclick="authProcess()">Login</button>
+
+
+    <p class="hint">
+        Belum ada akun?
+        <a href="daftar.html">Daftar!</a>
+    </p>
+</div>
+<div id="loadingScreen" class="loading-screen">
+    <div class="loading-box">
+        <div class="spinner"></div>
+        <h3>Mulai mencari sekolah...</h3>
+        <p>Mohon tunggu sebentar</p>
+    </div>
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
+</html>
